@@ -134,7 +134,7 @@ describe("stringReverse", () => {
 describe("stringLength", () => {
   it("a function that takes a string and returns the length of the string", () => {
     expect(stringLength("abcdefg")).toBe(7);
-    expect(stringLength("ey edip adanada pide ye")).toBe(33);
+    expect(stringLength("ey edip adanada pide ye")).toBe(23);
     expect(stringLength(" a")).toBe(2);
     expect(stringLength("cat")).toBe(3);
     expect(stringLength("")).toBe(0);

@@ -3,7 +3,7 @@ const {
   arrowMult,
   arrowArrayElementWiseSquare,
   arrowStringLength
-} = require("../src/arrowFunctions.js");
+} = require("../src/arrowFunctions");
 
 describe("arrowSum", () => {
   it("a function to add two numbers", () => {
