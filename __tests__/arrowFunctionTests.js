@@ -3,7 +3,7 @@ const {
   arrowMult,
   arrowArrayElementWiseSquare,
   arrowStringLength
-} = require("../src/arrowFunctions");
+} = require("../src/arrowFunctions.js");
 
 describe("arrowSum", () => {
   it("a function to add two numbers", () => {
@@ -32,7 +32,7 @@ describe("arrowArrayElementWiseSquare", () => {
     expect(arrowArrayElementWiseSquare(numbers)).toEqual([1, 4, 9, 16, 25]);
 
     const emptyArray = [];
-    expect(arrowArrayElementWiseSquare(emptyArray)).toEqual(null);
+    expect(arrowArrayElementWiseSquare(emptyArray)).toEqual([]);
 
     const singleElementArray = [10];
     expect(arrowArrayElementWiseSquare(singleElementArray)).toEqual([100]);
@@ -69,7 +69,7 @@ describe("arrowArrayElementWiseSquare", () => {
 describe("arrowStringLength", () => {
   it("a function that takes a string and returns the length of the string", () => {
     expect(arrowStringLength("abcdefg")).toBe(7);
-    expect(arrowStringLength("ey edip adanada pide ye")).toBe(33);
+    expect(arrowStringLength("ey edip adanada pide ye")).toBe(23);
     expect(arrowStringLength(" a")).toBe(2);
     expect(arrowStringLength("cat")).toBe(3);
     expect(arrowStringLength("")).toBe(0);
