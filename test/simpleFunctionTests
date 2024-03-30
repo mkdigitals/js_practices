@@ -8,8 +8,8 @@ const {
   findMin,
   stringReverse,
   stringLength,
-  allCaps,
-} = require("../src/simpleFunctions");
+  allCaps
+} = require("../src/simpleFunctions.js");
 
 describe("add", () => {
   it("a function to add two numbers", () => {
