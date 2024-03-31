@@ -29,8 +29,8 @@ describe("Circle", () => {
    and methods `area()` and `circumference()`.", () => {
     const circle = new Circle(5);
     expect(circle.radius).toBe(5);
-    expect(circle.area()).toEqual(25 * Math.PI());
-    expect(circle.circumference()).toEqual(10 * Math.PI());
+    expect(circle.area()).toEqual(25 * Math.PI);
+    expect(circle.circumference()).toEqual(10 * Math.PI);
   });
 });
 
